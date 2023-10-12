@@ -27,7 +27,7 @@ public class ExtentReportManager implements ITestListener
 
         sparkReporter.config().setDocumentTitle("PetStoreE2eTest"); // Title of report
         sparkReporter.config().setReportName("Pet Store Users API"); // name of the report
-        sparkReporter.config().setTheme(Theme.DARK);
+        sparkReporter.config().setTheme(Theme.STANDARD);
 
         extent = new ExtentReports();
 
@@ -65,4 +65,3 @@ public class ExtentReportManager implements ITestListener
         extent.flush();
     }
 }
-

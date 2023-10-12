@@ -1,4 +1,4 @@
-package api.payLoads;
+package api.payLoads.userPayLoads;
 
 public class User {
 

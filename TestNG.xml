@@ -6,8 +6,8 @@
     </listeners>
 <test thread-count="5" name="PetTests">
     <classes>
-        <class name="api.tests.UserTests"/>
-
+        <class name="api.tests.petTests.PetTests"/>
+        <class name="api.tests.userTests.UserTests"/>
     </classes>
 
 </test> <!-- petTests -->

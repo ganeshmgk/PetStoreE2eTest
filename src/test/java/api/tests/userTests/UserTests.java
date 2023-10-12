@@ -1,7 +1,7 @@
-package api.tests;
+package api.tests.userTests;
 
-import api.endPoints.UserEndPoints;
-import api.payLoads.User;
+import api.endPoints.userEndPoints.UserEndPoints;
+import api.payLoads.userPayLoads.User;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -45,6 +45,5 @@ public class UserTests {
         System.out.println("----->" + this.userPayLoad.getUserName());
         assertEquals(response.statusCode(), 404);
     }
-
 
 }
