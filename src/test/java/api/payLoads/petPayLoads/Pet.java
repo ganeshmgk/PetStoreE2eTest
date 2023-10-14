@@ -5,18 +5,18 @@ import java.util.List;
 
 public class Pet {
 
-    private int id;
+    private long id;
     private String name;
     private String status;
     private Category category;
-    private List<PhotoUrls> photoUrls;
+    private ArrayList<PhotoUrls> photoUrls;
     public ArrayList<Tag> tags;
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
     public String getName() {
@@ -37,10 +37,10 @@ public class Pet {
     public void setCategory(Category category) {
         this.category = category;
     }
-    public List<PhotoUrls> getPhotoUrls() {
+    public ArrayList<PhotoUrls> getPhotoUrls() {
         return photoUrls;
     }
-    public void setPhotoUrls(List<PhotoUrls> photoUrls) {
+    public void setPhotoUrls(ArrayList<PhotoUrls> photoUrls) {
         this.photoUrls = photoUrls;
     }
     public ArrayList<Tag> getTags() {
@@ -48,5 +48,17 @@ public class Pet {
     }
     public void setTags(ArrayList<Tag> tags) {
         this.tags = tags;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", status='" + status + '\'' +
+                ", category=" + category +
+                ", photoUrls=" + photoUrls +
+                ", tags=" + tags +
+                '}';
     }
 }

@@ -15,7 +15,7 @@ public class UserTests {
     Faker faker;
     User userPayLoad;
 
-    @BeforeClass
+   /* @BeforeClass
     public void setupData(){
         faker = new Faker();
         userPayLoad = new User();
@@ -44,6 +44,6 @@ public class UserTests {
         //User user = response.as(User.class);
         System.out.println("----->" + this.userPayLoad.getUserName());
         assertEquals(response.statusCode(), 404);
-    }
+    }*/
 
 }

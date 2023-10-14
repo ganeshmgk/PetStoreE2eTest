@@ -17,4 +17,7 @@ public class Routes {
     public static String get_pet_uri = baseUri + "/pet/{petId}";
     public static String get_pet_byStatus_uri = baseUri + "/pet/findByStatus";
     public static String updatePet_uri = baseUri + "/pet";
+
+    public static String deletePet_uri = baseUri + "/pet" +"/{petId}";
+    public static String getPetById_uri = baseUri + "/pet" +"/{petId}";
 }
